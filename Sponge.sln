@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{3F4027DC-08A4-89BD-4D53-90913F5DC714}") = "Sponge", "Assembly-CSharp.csproj", "{7DC8CCC0-21AE-C0A0-CB2A-C6CD80CCFDF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC8CCC0-21AE-C0A0-CB2A-C6CD80CCFDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC8CCC0-21AE-C0A0-CB2A-C6CD80CCFDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC8CCC0-21AE-C0A0-CB2A-C6CD80CCFDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC8CCC0-21AE-C0A0-CB2A-C6CD80CCFDF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
