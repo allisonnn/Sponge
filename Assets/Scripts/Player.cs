@@ -19,19 +19,4 @@ public class Player : MonoBehaviour {
 		Vector2 movement = new Vector2 (moveH, moveV);
 		rb2d.AddForce (movement * speed);
 	}
-
-	void OnCollisionEnter2D (Collision2D other) {
-		if (other.gameObject.CompareTag ("sponge_piece")) {
-			other.collider.isTrigger = true;
-			Debug.Log("iwiwiwiw");
-			count++;
-		}
-	}
-
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.CompareTag ("sponge_piece")) {
-			other.gameObject.SetActive (false);
-			count = 0;
-		}
-	}
 }
