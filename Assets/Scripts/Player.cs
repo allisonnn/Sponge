@@ -16,7 +16,10 @@ public class Player : MonoBehaviour {
 	void Update () {
 		float moveH = Input.GetAxis ("Horizontal");
 		float moveV = Input.GetAxis ("Vertical");
+//		Vector2 movement = new Vector2 (moveH/150, moveV/150);
 		Vector2 movement = new Vector2 (moveH, moveV);
 		rb2d.AddForce (movement * speed);
+//		rb2d.trans (rb2d.position + movement);
+//		rb2d.transform.Translate (movement);
 	}
 }

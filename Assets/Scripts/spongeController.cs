@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class spongeController : MonoBehaviour {
+
 	private int count;
 
 	// Use this for initialization
@@ -11,24 +12,21 @@ public class spongeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	void OnCollisionEnter2D (Collision2D other) {
+		Rigidbody2D rb2d;
 		if (other.gameObject.CompareTag ("Player")) {
-			Debug.Log("iwiwiwiw");
+			rb2d = other.gameObject.GetComponent <Rigidbody2D> ();
+			rb2d.AddForce (new Vector2 (25, 0));
+//			rb2d.transform (rb2d.position + movement);
 			count++;
 		}
 		if (count == 3) {
-//			other.collider.isTrigger = true;
 			this.gameObject.SetActive(false);
 			count = 0;
 		}
 	}
-//
-//	void OnTriggerEnter2D(Collider2D other) {
-//		if (other.gameObject.CompareTag ("sponge_piece")) {
-//			other.gameObject.SetActive (false);
-//		}
-//	}
+
 }
